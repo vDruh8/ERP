@@ -1,0 +1,37 @@
+:root {
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Header */
+
+.subrayado::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #000;
+    transform: scale(0,1);
+    transform-origin: left;
+    transition: transform .3s;
+    
+  }
+  
+  .subrayado:hover::after {
+    transform: scale(1,1);
+  }
+
+  @media (min-width: 992px) {
+    .navbar-brand,
+    .navbar-nav {
+      margin: 0 60px;
+    }
+  }
