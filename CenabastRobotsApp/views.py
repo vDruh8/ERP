@@ -5,3 +5,6 @@ def home(request):
 
 def proyectos(request):
     return render(request, "proyectos.html")
+
+def gestioncontratos(request):
+    return render(request, "gestioncontratos.html")

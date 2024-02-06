@@ -35,3 +35,7 @@ html {
       margin: 0 60px;
     }
   }
+
+  .caja-altura{
+    height: 120px !important;
+  }
