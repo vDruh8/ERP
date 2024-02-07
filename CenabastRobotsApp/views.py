@@ -8,3 +8,13 @@ def proyectos(request):
 
 def gestioncontratos(request):
     return render(request, "gestioncontratos.html")
+
+def usuarios(request):
+    return render(request, "usuarios.html")
+
+def finanzas(request):
+    return render(request, "finanzas.html")
+
+def facturacion(request):
+    return render(request, "facturacion.html")
+

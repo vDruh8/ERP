@@ -28,26 +28,36 @@
         </span>
       </a>
     </div>
-    <nav class="md:mt-0">
-      <a class="relative group mr-2 md:mr-4" href="/">
-        Home
-        <span
-          class="h-[2px] inline-block w-0 bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition[width] ease duration-300">&nbsp;</span>
+
+    <!-- * Navbar-->
+    <nav class="md:mt-0 flex space-x-4">
+      <a class="relative group flex items-center" href="/">
+          <span class="hover:underline">Home</span>
+          <svg class="h-5 w-5 text-blue-500 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+          </svg>
+          <span
+              class="h-[2px] inline-block w-0 bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition[width] ease duration-300">&nbsp;</span>
       </a>
-    </nav>
+  </nav>
   </div>
   <!-- * Fin Menu -->
 
   <!-- * Titulo -->
   <div class="text-3xl font-bold text-black mb-12 mt-12 text-center">
     Nuestros proyectos actualmente en
-    <span class="text-blue-600 font-bold">CENABAST</span>
+    <div class="inline-block relative">
+      <span class="text-blue-500">CENA</span><span class="text-red-500 absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-blue-500 to-red-500"></span><span class="text-blue-500">BAST</span>
+    </div>
+    
   </div>
-
+  <br>
+  <br>
 
   <div class="flex flex-wrap gap-4 justify-center pb-40">
     <!-- ! BOTON 1 -->
-    <div x-data="{ open: false }" class="flex-1 p-4 text-left" >
+    <div x-data="{ open: false }" class="flex-1 p-4 text-left">
       <!-- Dropdown -->
       <div @click.away="open = false" class="flex-1 p-4 text-left">
         <button @click="open = !open"
@@ -56,10 +66,16 @@
           Depto. Operaciones Abastecimiento
         </button>
         <div x-show="open" class="absolute bg-white mt-2 w-50 rounded-lg">
-          <a href="#" class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto. Adquisiciones</a>
-          <a href="../gestioncontratos" class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto. Gestión Contratos</a>
-          <a href="#" class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto. de Usuarios</a>
-          <a href="#" class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto. de Operaciones Logísticas</a>
+          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+            Adquisiciones</a>
+          <a href="../gestioncontratos"
+            class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+            Gestión Contratos</a>
+          <a href="../usuarios"
+            class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+            de Usuarios</a>
+          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+            de Operaciones Logísticas</a>
         </div>
       </div>
     </div>
@@ -73,9 +89,9 @@
           Depto. Técnico Farmaceutico
         </button>
         <div x-show="open" class="absolute bg-white mt-2 w-50 rounded-lg">
-          <a href="#" class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Gestión Técnica y Calidad</a>
-          <a href="#" class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Asuntos Regulatorios</a>
         </div>
       </div>
@@ -90,9 +106,9 @@
           Depto. Jurídico
         </button>
         <div x-show="open" class="absolute bg-white mt-2 w-60 rounded-lg">
-          <a href="#" class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Legal Abastecimiento</a>
-          <a href="#" class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Fiscalía</a>
         </div>
       </div>
@@ -107,14 +123,16 @@
           Depto. Finanzas, Administración y Servicios Internos
         </button>
         <div x-show="open" class="absolute bg-white mt-2 w-50 rounded-lg">
-          <a href="#" class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             de Cobranzas</a>
 
-          <a href="#" class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+          <a href="../facturacion"
+            class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             de Facturación</a>
-          <a href="#" class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+          <a href="../finanzas"
+            class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Finanzas</a>
-          <a href="#" class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Administración Interna</a>
         </div>
       </div>
@@ -129,15 +147,17 @@
           Depto. Tecnologías de la Información
         </button>
         <div x-show="open" class="absolute bg-white mt-2 w-50 rounded-lg">
-          <a href="#" class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Proyectos</a>
-          <a href="#" class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Servicios Tecnológicos</a>
         </div>
       </div>
     </div>
   </div>
-
+ 
+  <br>
+  <br>
 
   <!-- Footer -->
   <footer class="bg-blue-100 py-8 flex flex-col lg:flex-row justify-evenly items-center">
@@ -173,7 +193,3 @@
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@2"></script>
 
 </html>
-
-
-
-
