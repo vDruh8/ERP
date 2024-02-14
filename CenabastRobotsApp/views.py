@@ -18,3 +18,8 @@ def finanzas(request):
 def facturacion(request):
     return render(request, "facturacion.html")
 
+def personas(request):
+    return render(request, "personas.html")
+
+
+

@@ -32,15 +32,15 @@
     <!-- * Navbar-->
     <nav class="md:mt-0 flex space-x-4">
       <a class="relative group flex items-center" href="/">
-          <span class="hover:underline">Home</span>
-          <svg class="h-5 w-5 text-blue-500 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-          </svg>
-          <span
-              class="h-[2px] inline-block w-0 bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition[width] ease duration-300">&nbsp;</span>
+        <span class="hover:underline">Home</span>
+        <svg class="h-5 w-5 text-blue-500 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+        <span
+          class="h-[2px] inline-block w-0 bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition[width] ease duration-300">&nbsp;</span>
       </a>
-  </nav>
+    </nav>
   </div>
   <!-- * Fin Menu -->
 
@@ -48,25 +48,29 @@
   <div class="text-3xl font-bold text-black mb-12 mt-12 text-center">
     Nuestros proyectos actualmente en
     <div class="inline-block relative">
-      <span class="text-blue-500">CENA</span><span class="text-red-500 absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-blue-500 to-red-500"></span><span class="text-blue-500">BAST</span>
+      <span class="text-blue-500">CENA</span><span
+        class="text-red-500 absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-blue-500 to-red-500"></span><span
+        class="text-blue-500">BAST</span>
     </div>
-    
+
   </div>
   <br>
   <br>
 
-  <div class="flex flex-wrap gap-4 justify-center pb-40">
-    <!-- ! BOTON 1 -->
+  <div class="flex gap-4 justify-center pb-40">
+    <!-- BOTON 1 -->
     <div x-data="{ open: false }" class="flex-1 p-4 text-left">
       <!-- Dropdown -->
       <div @click.away="open = false" class="flex-1 p-4 text-left">
         <button @click="open = !open"
-          class="btn font-semibold flex-1 p-4 text-sm lg:text-lg bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black h-28 w-50"
+          class="btn font-semibold p-4 text-sm lg:text-lg bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black h-28 w-48"
           data-index="0">
           Depto. Operaciones Abastecimiento
         </button>
-        <div x-show="open" class="absolute bg-white mt-2 w-50 rounded-lg">
-          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+        <div x-show="open" class="absolute bg-white mt-2 w-48 rounded-lg">
+          <!-- Dropdown options -->
+          <a
+            class="my-2 block px-4 py-2 text-sm bg-blue-100 text-black rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Adquisiciones</a>
           <a href="../gestioncontratos"
             class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
@@ -74,88 +78,123 @@
           <a href="../usuarios"
             class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             de Usuarios</a>
-          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+          <a
+            class="my-2 block px-4 py-2 text-sm bg-blue-100 text-black rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             de Operaciones Logísticas</a>
         </div>
       </div>
     </div>
-    <!-- ! BOTON 2 -->
+
+    <!-- BOTON 2 -->
     <div x-data="{ open: false }" class="flex-1 p-4 text-left">
       <!-- Dropdown -->
       <div @click.away="open = false" class="flex-1 p-4 text-left">
         <button @click="open = !open"
-          class="btn font-semibold flex-1 p-4 text-sm lg:text-lg bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black h-28 w-50"
+          class="btn font-semibold p-4 text-sm lg:text-lg bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black h-28 w-48"
           data-index="1">
           Depto. Técnico Farmaceutico
         </button>
-        <div x-show="open" class="absolute bg-white mt-2 w-50 rounded-lg">
-          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+        <div x-show="open" class="absolute bg-white mt-2 w-48 rounded-lg">
+          <!-- Dropdown options -->
+          <a
+            class="my-2 block px-4 py-2 text-sm bg-blue-100 text-black rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Gestión Técnica y Calidad</a>
-          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+          <a
+            class="my-2 block px-4 py-2 text-sm bg-blue-100 text-black rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Asuntos Regulatorios</a>
         </div>
       </div>
     </div>
-    <!-- ! BOTON 3 -->
+
+    <!-- BOTON 3 -->
     <div x-data="{ open: false }" class="flex-1 p-4 text-left">
       <!-- Dropdown -->
       <div @click.away="open = false" class="flex-1 p-4 text-left">
         <button @click="open = !open"
-          class="btn font-semibold flex-1 p-4 text-sm lg:text-lg bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black h-28 w-60"
+          class="btn font-semibold p-4 text-sm lg:text-lg bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black h-28 w-48"
           data-index="2">
           Depto. Jurídico
         </button>
-        <div x-show="open" class="absolute bg-white mt-2 w-60 rounded-lg">
-          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+        <div x-show="open" class="absolute bg-white mt-2 w-48 rounded-lg">
+          <!-- Dropdown options -->
+          <a
+            class="my-2 block px-4 py-2 text-sm bg-blue-100 text-black rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Legal Abastecimiento</a>
-          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+          <a
+            class="my-2 block px-4 py-2 text-sm bg-blue-100 text-black rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Fiscalía</a>
         </div>
       </div>
     </div>
-    <!-- ! BOTON 4 -->
+
+    <!-- BOTON 4 -->
     <div x-data="{ open: false }" class="flex-1 p-4 text-left ">
       <!-- Dropdown -->
       <div @click.away="open = false" class="flex-1 p-4 text-left">
         <button @click="open = !open"
-          class="btn font-semibold flex-1 p-4 text-sm lg:text-lg bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black h-28 w-50"
+          class="btn font-semibold p-4 text-sm lg:text-lg bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black h-28 w-48"
           data-index="3">
           Depto. Finanzas, Administración y Servicios Internos
         </button>
-        <div x-show="open" class="absolute bg-white mt-2 w-50 rounded-lg">
-          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+        <div x-show="open" class="absolute bg-white mt-2 w-48 rounded-lg">
+          <!-- Dropdown options -->
+          <a
+            class="my-2 block px-4 py-2 text-sm bg-blue-100 text-black rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             de Cobranzas</a>
-
           <a href="../facturacion"
             class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             de Facturación</a>
           <a href="../finanzas"
             class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Finanzas</a>
-          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+          <a
+            class="my-2 block px-4 py-2 text-sm bg-blue-100 text-black rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Administración Interna</a>
         </div>
       </div>
     </div>
-    <!-- ! BOTON 5 -->
+
+    <!-- BOTON 5 -->
     <div x-data="{ open: false }" class="flex-1 p-4 text-left">
       <!-- Dropdown -->
       <div @click.away="open = false" class="flex-1 p-4 text-left">
         <button @click="open = !open"
-          class="btn font-semibold flex-1 p-4 text-sm lg:text-lg bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black h-28 w-50"
+          class="btn font-semibold p-4 text-sm lg:text-lg bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black h-28 w-48"
           data-index="4">
           Depto. Tecnologías de la Información
         </button>
-        <div x-show="open" class="absolute bg-white mt-2 w-50 rounded-lg">
-          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+        <div x-show="open" class="absolute bg-white mt-2 w-48 rounded-lg">
+          <!-- Dropdown options -->
+          <a
+            class="my-2 block px-4 py-2 text-sm bg-blue-100 text-black rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Proyectos</a>
-          <a class="my-2 block px-4 py-2 text-sm bg-blue-100 text-bl rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
+          <a
+            class="my-2 block px-4 py-2 text-sm bg-blue-100 text-black rounded-lg hover:bg-blue-200 border-2 border-solid border-1 border-black hover:border-black">SubDepto.
             Servicios Tecnológicos</a>
         </div>
       </div>
     </div>
+
+    <!-- BOTON 6-->
+    <div x-data="{ open: false }" class="flex-1 p-4 text-left">
+      <!-- Dropdown -->
+      <div @click.away="open = false" class="flex-1 p-4 text-left">
+        <button @click="open = !open"
+          class="btn font-semibold p-4 text-sm lg:text-lg bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black h-28 w-48"
+          data-index="5">
+          Unidad Gestión y Desarrollo de Personas
+        </button>
+        <div x-show="open" class="absolute bg-white mt-2 w-48 rounded-lg">
+          <!-- Dropdown options -->
+          <a href="../personas"
+          class="my-2 block px-4 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 border-2 border-solid border-1 border-black hover:border-black">SubUnidad Gestión de Personas</a>
+        </div>
+      </div>
+    </div>
   </div>
- 
+
+
+
   <br>
   <br>
 
