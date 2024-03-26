@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cenabast Robots</title>
+  <title>Cenabast ERP</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&display=swap"
@@ -30,8 +30,8 @@
       </a>
     </div>
     <nav class="md:mt-0 flex overflow-x">
-      <a class="relative group flex items-center mr-2 md:mr-4" href="/">
-        <span class="hover:underline">Home</span>
+      <a class="relative group flex items-center mr-2 md:mr-4" href="#Proyectos">
+        <span class="hover:underline">Proyectos</span>
         <svg class="h-5 w-5 text-blue-500 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -40,8 +40,8 @@
           class="h-[2px] inline-block w-0 bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition[width] ease duration-300">&nbsp;</span>
       </a>
 
-      <a class="relative group flex items-center mr-2 md:mr-4" href="#ERP">
-        <span class="hover:underline">¿Qué es ERP?</span>
+      <a class="relative group flex items-center mr-2 md:mr-4" href="#ReqEnCurso">
+        <span class="hover:underline">Requerimientos en Curso</span>
         <svg class="h-5 w-5 text-blue-500 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -49,8 +49,8 @@
       </a>
       <!-- Agrega más enlaces según sea necesario -->
 
-      <a class="relative group flex items-center mr-2 md:mr-4" href="#Testimonios">
-        <span class="hover:underline">Testimonios</span>
+      <a class="relative group flex items-center mr-2 md:mr-4" href="#TiposRequerimientos">
+        <span class="hover:underline">Tipos de Requerimientos</span>
         <svg class="h-5 w-5 text-blue-500 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -78,15 +78,17 @@
   <!--* Carrusel -->
   <main class="flex flex-col lg:flex-row items-center justify-between">
     <div class="grid mx-32 place-items-center lg:text-left lg:items-start lg:self-auto lg:w-1/2">
-      <h1 class="text-4xl lg:text-6xl">ERP</h1>
+      <h1 class="text-4xl lg:text-6xl">Administración ERP</h1>
       <p class="my-8 mx-4 lg:mx-0 text-lg lg:text-xl font-medium text-center w-auto">
-        Optimiza tu empresa con ERP SAP. Eficiencia integrada que impulsa el crecimiento.
-        ¡Contáctanos y descubre más!
+        Sección encargada de administrar y dar continuidad operativa al sistema ERP SAP. 
+        <br>
+        <br>
+        <span class="font-normal ">Encargados de la implementación de los proyectos asociados al ERP, ya sea por modernización, nuevos modelos de negocios, mejoras en los procesos actuales y nuevos procesos a implementar. A su vez, entregamos soluciones a las incidencias reportadas por cada departamento de la institución.</span>
       </p>
       <div class="flex flex-col lg:flex-row gap-4">
-        <a href="https://forms.gle/vT11nGYe8dEQMze1A" target="_blank"
+        <a href="https://forms.gle/aCQw1Dwpyp2QG1Uj6" target="_blank"
           class="flex items-center justify-center bg-blue-600 text-white p-2.5 rounded-lg text-sm lg:text-lg font-semibold hover:bg-blue-500 border-2 border-solid text-center border-transparent hover:border-black w-auto px-4">
-          VER QUE PONER
+          Solicitud Requerimiento
         </a>
       </div>
     </div>
@@ -95,232 +97,108 @@
     </div>
   </main>
 
-
-  <!--* RPA  -->
-  <div class="bg-white p-6 mx-auto my-10 rounded-md text-center" id="ERP">
-    <h1 class="text-3xl font-bold text-black mb-12 mt-8">¿Qué es ERP?</h1>
-    <p class="text-gray-700 text-lg leading-relaxed w-4/5 mx-auto text-justify">
-      La planificación de recursos empresariales (ERP) <span class="text-red-500 font-bold">es un sistema de software</span> que ayuda a 
-      operar todo su negocio, dando soporte a la automatización y los procesos en finanzas, 
-      recursos humanos, fabricación, cadena de suministro, servicios, procurement, y más.
-      </p>
-      <!--* PONER TEXTO EN ROJO
-        <span class="text-red-500 font-bold">tareas repetitivas</span>, rutinarias en
-      sistemas y aplicaciones empresariales. Estos robots de software pueden realizar
-      acciones como la manipulación de datos, la activación de respuestas a eventos,
-      la realización de cálculos, la navegación en sistemas y otras tareas similares.
-    </p>
+<!-- Requerimientos En Curso -->
+  <div id="ReqEnCurso">
+  <section class="text-neutral-700 dark:text-neutral-300 my-24">
+    <h1 class="text-3xl font-bold mb-12 text-center text-black">Requerimientos en Curso</h1>
+    </selection>
+  </div>
+ <!-- BOTON QUE LLEVA A SECCION PROYECTOS
+    <div class="flex items-center justify-center">
+      <a href="/proyectos"
+        class="bg-blue-600 text-white p-2.5 rounded-lg text-sm lg:text-lg font-semibold hover:bg-blue-500 border-2 border-solid text-center border-transparent hover:border-black w-auto px-4">
+        ERP - CENABAST
+      </a>
+    </div>
   -->
-    <!--* Def detallada RPA  -->
-  <div class="bg-white p-6 mx-auto my-10 rounded-md text-center" id="ERP">
-    <h1 class="text-3xl font-bold text-black mb-12 mt-8">Definición detallada de ERP</h1>
-    <p class="text-gray-700 text-lg leading-relaxed w-4/5 mx-auto text-justify">
-      ERP son las siglas en inglés de <span class="text-red-500 font-bold">"planificación de recursos empresariales"</span>, pero 
-      ¿qué significa ERP? La manera más simple de definir el ERP es pensar en todos los 
-      procesos de negocio centrales necesarios para operar una empresa: finanzas, RR. HH., 
-      fabricación, cadena de suministro, servicios, procurement, y otros. En su nivel más básico, 
-      el ERP <span class="text-red-500 font-bold">ayuda a gestionar de forma eficiente</span> todos estos procesos en un sistema integrado. 
-      A menudo es el sistema de registro de la organización.
-    </p>
 
-<!--* Beneficios  -->
+    <div class="flex items-center justify-center h-screen">
+      <iframe title="Grafico Radar" width="900" height="673.5" src="https://app.powerbi.com/view?r=eyJrIjoiNmM3YjYwZjYtN2ZlNS00ZDMyLTkxMDItZDg4NjczOTJkYThiIiwidCI6IjJlOTQ1NTBhLWYxYmYtNGUzZC1hY2ViLWJhZTUwY2YxZmJlMyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+    </div>
+
+
+    <!--* Proyectos En Curso  -->
+  <div class="bg-white p-6 mx-auto my-10 rounded-md text-center" id="Proyectos">
+    <h1 class="text-3xl font-bold text-black mb-12 mt-8">Proyectos en Curso</h1>
+    <!--* Foto Trello  -->
     <div class="flex items-center justify-center">
       <div class="place-self-center">
         <img src="{% static 'assets/ERP_QUE_ES.svg' %}" alt="ERP" width="500" height="500"
           class="relative inset-0 flex" />
       </div>
     </div>
-    <h1 class="font-bold text-3xl mt-12 mb-12 w-full text-center">Beneficios</h1>
-
-    <div class="flex min-h-screen items-center justify-center">
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <div
-          class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-md">
-          <div class="h-96 w-72 relative">
-            <img src="{% static 'assets/c1.webp' %}" alt="card1" width="1324" height="1061"
-              class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125 brightness-100" />
-            <div
-              class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-            </div>
-          </div>
-          <div
-            class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-            <h1 class="font-dmserif text-3xl text-white">Mayor productividad</h1>
-            <p class="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              Optimice y automatice sus procesos de negocio centrales para ayudar a 
-              todas las personas de su organización a hacer más con menos recursos.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-md">
-          <div class="h-96 w-72 relative">
-            <img src="{% static 'assets/card2.webp' %}" alt="card2" width="1324" height="1061"
-              class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125 brightness-100" />
-            <div
-              class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-            </div>
-          </div>
-          <div
-            class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-            <h1 class="font-dmserif text-3xl text-white">
-              Información estratégica más profunda
-            </h1>
-            <p class="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              Elimine los silos de información, obtenga una única fuente de verdad, 
-              y obtenga respuestas rápidas a preguntas de negocio críticas.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-md">
-          <div class="h-96 w-72 relative">
-            <img src="{% static 'assets/card5.webp' %}" alt="card3" width="1324" height="1061"
-              class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125 brightness-100" />
-            <div
-              class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-            </div>
-          </div>
-          <div
-            class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-            <h1 class="font-dmserif text-3xl text-white">Informes acelerados</h1>
-            <p class="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              Agilice los informes financieros y de negocios y comparta los resultados fácilmente. 
-              Actúe en base a información estratégica y mejore el rendimiento en tiempo real.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-md">
-          <div class="h-96 w-72 relative">
-            <img src="{% static 'assets/card4.webp' %}" alt="card4" width="1324" height="1061"
-              class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125 brightness-100" />
-            <div
-              class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-            </div>
-          </div>
-          <div
-            class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-            <h1 class="font-dmserif text-3xl text-white">
-              Reduzca el riesgo
-            </h1>
-            <p class="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              Maximice la visibilidad y el control del negocio, garantice el compliance de los
-               requisitos regulatorios, y proyecte y prevenga riesgos.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-md">
-          <div class="h-96 w-72 relative">
-            <img src="{% static 'assets/c2.webp' %}" alt="card5" width="1324" height="1061"
-              class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125 brightness-100" />
-            <div
-              class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-            </div>
-          </div>
-          <div
-            class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-            <h1 class="font-dmserif text-3xl text-white">
-              IT más simple
-            </h1>
-            <p class="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              Usando aplicaciones de ERP integradas que comparten una base de datos, usted puede simplificar la TI y ofrecerles a todos una manera más fácil de trabajar.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-md">
-          <div class="h-96 w-72 relative">
-            <img src="{% static 'assets/card6.webp' %}" alt="card6" width="1324" height="1061"
-              class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125 brightness-100" />
-            <div
-              class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-            </div>
-          </div>
-          <div
-            class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-            <h1 class="font-dmserif text-3xl text-white">
-              Agilidad mejorada
-            </h1>
-            <p class="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              Con operaciones eficientes y rápido acceso a datos en tiempo real,
-               puede identificar rápidamente nuevas oportunidades y reaccionar a ellas.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
   <!--* Testimonios -->
-  <div id="Testimonios">
+  <div id="TiposRequerimientos">
     <div class="container my-24 mx-auto md:px-6">
       <section class="mb-32 text-center">
-        <h2 class="mb-12 text-3xl font-bold">Testimonios</h2>
+        <h2 class="mb-12 text-3xl font-bold">Tipos de Requerimientos</h2>
+
+        
 
         <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
           <div class="mb-12 md:mb-0">
             <div class="mb-6 flex justify-center">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
+              <img src="{% static 'assets/RDC.webp' %}"
                 class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
             </div>
-            <h5 class="mb-2 text-lg font-bold">Maria Smantha</h5>
-            <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
-              Web Developer
-            </h6>
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
-              id officiis hic tenetur quae quaerat ad velit ab hic.
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
-                <path fill="currentColor"
-                  d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
-              </svg>
+            <h5 class="mb-2 text-lg font-bold">Requerimiento de Cambio (RDC)</h5>
+
+            <p class="mb-4 text-justify">
+              Este proceso implica abordar mejoras funcionales en SAP mediante horas del pool de horas
+               contratado, basadas en un Documento de Solicitud de Cambio (CRD) del cliente. Novis ofrece 
+               una propuesta de solución y estimación de horas, sujetas a revisión y aprobación del cliente 
+               antes de iniciar la implementación. Además, se puede acordar una estimación de horas para requisitos 
+               repetitivos (Requisito Preevaluado), evitando la fase de evaluación de la mejora.
             </p>
+
+            <div class="flex items-center justify-center">
+              <a href="/proyectos"
+                class="bg-blue-600 text-white p-2 rounded-lg text-sm lg:text-lg font-semibold hover:bg-blue-500 border-2 border-solid text-center border-transparent hover:border-black w-auto px-4">
+                Descargar Formato
+              </a>
+            </div>
 
           </div>
           <div class="mb-12 md:mb-0">
             <div class="mb-6 flex justify-center">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
+              <img src="{% static 'assets/Incidente.webp' %}"
                 class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
             </div>
-            <h5 class="mb-2 text-lg font-bold">Lisa Cudrow</h5>
-            <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
-              Graphic Designer
-            </h6>
-            <p class="mb-4">
-              Ut enim ad minima veniam, quis nostrum exercitationem ullam
-              corporis suscipit laboriosam, nisi ut aliquid commodi.
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
-                <path fill="currentColor"
-                  d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
-              </svg>
+            <h5 class="mb-2 text-lg font-bold">Incidente</h5>
+            <p class="mb-4 text-justify">
+              Orientado a solucionar el problema funcional con su sistema SAP exclusivamente.
+    
             </p>
+
+            <div class="flex items-center justify-center">
+              <a href="/proyectos"
+                class="bg-blue-600 text-white p-2 rounded-lg text-sm lg:text-lg font-semibold hover:bg-blue-500 border-2 border-solid text-center border-transparent hover:border-black w-auto px-4">
+                Descargar Formato
+              </a>
+            </div>
 
           </div>
           <div class="mb-0">
             <div class="mb-6 flex justify-center">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
+              <img src="{% static 'assets/Asesoria.webp' %}"
                 class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
             </div>
-            <h5 class="mb-2 text-lg font-bold">John Smith</h5>
-            <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
-              Marketing Specialist
-            </h6>
-            <p class="mb-4">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque corrupti.
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
-                <path fill="currentColor"
-                  d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
-              </svg>
+            <h5 class="mb-2 text-lg font-bold">Asesoría</h5>
+            <p class="mb-4 text-justify">
+              Corresponde a una reunión planificada (bajo demanda), ya sea presencial o remota, 
+              de un consultor experto en el tema solicitado. Estas consultorías tienen como objetivo 
+              explorar nuevas soluciones y contribuir
+              
             </p>
+
+            <div class="flex items-center justify-center">
+              <a href="/proyectos"
+                class="bg-blue-600 text-white p-2 rounded-lg text-sm lg:text-lg font-semibold hover:bg-blue-500 border-2 border-solid text-center border-transparent hover:border-black w-auto px-4">
+                Descargar Formato
+              </a>
+            </div>
 
           </div>
         </div>
@@ -328,51 +206,7 @@
     </div>
   </div>
 
-  <!-- Transformacion 
-  <div id="Transformacion"
-    class="text-center mt-8 flex flex-col md:flex-row items-center mb-8 mx-4 md:mx-auto justify-between ">
-    <div class="md:w-1/2 mb-6 md:mb-0">
-      <a href="/">
-        <img src="{% static 'assets/Mundo.gif' %}" alt="Mundo" width="500" height="500" class="mx-auto md:ml-auto" />
-      </a>
-    </div>
-    <div class="md:w-1/2 text-black md:pl-8 mr-24">
-      <h1 class="text-3xl font-bold mb-12">Transformación Digital</h1>
-      <p class="text-gray-700 leading-7 text-justify">
-        La Ley de Transformación Digital del Estado en Chile (Ley nº 21.180)
-        promueve la realización de procedimientos administrativos en formato
-        electrónico, según la Ley de Bases de Procedimiento Administrativo. Busca
-        proporcionar certeza, seguridad y velocidad en la entrega de servicios,
-        así como mayor transparencia en las actuaciones del Estado.
-      </p>
-      <br />
-      <h4>Ejes de la ley de Transformación Digital del Estado</h4>
-      <ul class="list-disc pl-6 mt-4 text-left">
-        <li class="mb-2">Comunicaciones electrónicas.</li>
-        <li class="mb-2">Notificaciones Electrónicas.</li>
-        <li class="mb-2">Procedimientos administrativos.</li>
-        <li class="mb-2">Expedientes electrónicos.</li>
-        <li class="mb-2">Digitalización de Documentos.</li>
-        <li class="mb-2">Principio de interoperabilidad.</li>
-      </ul>
-    </div>
-  </div>-->
-  <!-- -->
-  <section class="text-neutral-700 dark:text-neutral-300 my-24">
-    <h1 class="text-3xl font-bold mb-12 text-center text-black">Conoce Nuestros Proyectos</h1>
-    </selection>
 
-    <div class="flex items-center justify-center">
-      <a href="/proyectos"
-        class="bg-blue-600 text-white p-2.5 rounded-lg text-sm lg:text-lg font-semibold hover:bg-blue-500 border-2 border-solid text-center border-transparent hover:border-black w-auto px-4">
-        ERP - CENABAST
-      </a>
-    </div>
-
-    <div class="flex items-center justify-center h-screen">
-      <iframe title="Grafico Radar" width="900" height="673.5" src="https://app.powerbi.com/view?r=eyJrIjoiNmM3YjYwZjYtN2ZlNS00ZDMyLTkxMDItZDg4NjczOTJkYThiIiwidCI6IjJlOTQ1NTBhLWYxYmYtNGUzZC1hY2ViLWJhZTUwY2YxZmJlMyIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
-    </div>
-    
 
 
     <!--* Conocenos -->
@@ -445,10 +279,11 @@
 
       <div class="max-w-lg text-center mb-4 lg:mb-0">
         <p class="text-sm lg:text-base">
-          Sección de Automatización <br /> Departamento Tecnologías De La Información
+          Sección de Administración ERP <br /> Departamento Tecnologías De La Información
           <br /> Central de Abastecimiento del Sistema Nacional de Servicios de Salud
         </p>
       </div>
+       <!--*
       <div class="text-center">
         <h1 class="text-black text-lg mb-2 lg:mb-4">Links de Interés</h1>
         <div class="flex items-center justify-center">
@@ -457,7 +292,9 @@
             <span class="text-sm ml-2">Automation Anywhere</span>
           </a>
         </div>
+      
       </div>
+      -->
     </footer>
 
     <div class="bg-blue-600 py-2 text-white text-center">
