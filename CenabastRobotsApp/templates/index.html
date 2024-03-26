@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load static %}
+ {% load static %}
 <html lang="es">
 
 <head>
@@ -40,8 +40,8 @@
           class="h-[2px] inline-block w-0 bg-black absolute left-0 -bottom-0.5 group-hover:w-full transition[width] ease duration-300">&nbsp;</span>
       </a>
 
-      <a class="relative group flex items-center mr-2 md:mr-4" href="#RPA">
-        <span class="hover:underline">¿Qué es RPA?</span>
+      <a class="relative group flex items-center mr-2 md:mr-4" href="#ERP">
+        <span class="hover:underline">¿Qué es ERP?</span>
         <svg class="h-5 w-5 text-blue-500 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -78,42 +78,55 @@
   <!--* Carrusel -->
   <main class="flex flex-col lg:flex-row items-center justify-between">
     <div class="grid mx-32 place-items-center lg:text-left lg:items-start lg:self-auto lg:w-1/2">
-      <h1 class="text-4xl lg:text-6xl">RPA</h1>
+      <h1 class="text-4xl lg:text-6xl">ERP</h1>
       <p class="my-8 mx-4 lg:mx-0 text-lg lg:text-xl font-medium text-center w-auto">
-        Eleva tu unidad con RPA. Automatización que impulsa la eficiencia.
+        Optimiza tu empresa con ERP SAP. Eficiencia integrada que impulsa el crecimiento.
         ¡Contáctanos y descubre más!
       </p>
       <div class="flex flex-col lg:flex-row gap-4">
         <a href="https://forms.gle/vT11nGYe8dEQMze1A" target="_blank"
           class="flex items-center justify-center bg-blue-600 text-white p-2.5 rounded-lg text-sm lg:text-lg font-semibold hover:bg-blue-500 border-2 border-solid text-center border-transparent hover:border-black w-auto px-4">
-          Quiero Automatizar
+          VER QUE PONER
         </a>
       </div>
     </div>
     <div class="lg:w-1/2 mt-4 lg:mt-0">
-      <img src="{% static 'assets/imagen1.svg' %}" alt="" width="700" height="700" class="" />
+      <img src="{% static 'assets/imagenERP2.webp' %}" alt="" width="700" height="700" class="" />
     </div>
   </main>
 
 
-  <!--* RPA -->
-  <div class="bg-white p-6 mx-auto my-10 rounded-md text-center" id="RPA">
-    <h1 class="text-3xl font-bold text-black mb-12 mt-8">¿Qué es RPA?</h1>
+  <!--* RPA  -->
+  <div class="bg-white p-6 mx-auto my-10 rounded-md text-center" id="ERP">
+    <h1 class="text-3xl font-bold text-black mb-12 mt-8">¿Qué es ERP?</h1>
     <p class="text-gray-700 text-lg leading-relaxed w-4/5 mx-auto text-justify">
-      RPA, o Automatización de Procesos Robóticos (por sus siglas en inglés,
-      Robotic Process Automation), se refiere a la tecnología que utiliza
-      <span class="text-red-500 font-bold">
-        robots de software o "bots"
-      </span>
-      para realizar
-      <span class="text-red-500 font-bold">tareas repetitivas</span>, rutinarias en
+      La planificación de recursos empresariales (ERP) <span class="text-red-500 font-bold">es un sistema de software</span> que ayuda a 
+      operar todo su negocio, dando soporte a la automatización y los procesos en finanzas, 
+      recursos humanos, fabricación, cadena de suministro, servicios, procurement, y más.
+      </p>
+      <!--* PONER TEXTO EN ROJO
+        <span class="text-red-500 font-bold">tareas repetitivas</span>, rutinarias en
       sistemas y aplicaciones empresariales. Estos robots de software pueden realizar
       acciones como la manipulación de datos, la activación de respuestas a eventos,
       la realización de cálculos, la navegación en sistemas y otras tareas similares.
     </p>
+  -->
+    <!--* Def detallada RPA  -->
+  <div class="bg-white p-6 mx-auto my-10 rounded-md text-center" id="ERP">
+    <h1 class="text-3xl font-bold text-black mb-12 mt-8">Definición detallada de ERP</h1>
+    <p class="text-gray-700 text-lg leading-relaxed w-4/5 mx-auto text-justify">
+      ERP son las siglas en inglés de <span class="text-red-500 font-bold">"planificación de recursos empresariales"</span>, pero 
+      ¿qué significa ERP? La manera más simple de definir el ERP es pensar en todos los 
+      procesos de negocio centrales necesarios para operar una empresa: finanzas, RR. HH., 
+      fabricación, cadena de suministro, servicios, procurement, y otros. En su nivel más básico, 
+      el ERP <span class="text-red-500 font-bold">ayuda a gestionar de forma eficiente</span> todos estos procesos en un sistema integrado. 
+      A menudo es el sistema de registro de la organización.
+    </p>
+
+<!--* Beneficios  -->
     <div class="flex items-center justify-center">
       <div class="place-self-center">
-        <img src="{% static 'assets/Chatbot.gif' %}" alt="RPA" width="500" height="500"
+        <img src="{% static 'assets/ERP_QUE_ES.svg' %}" alt="ERP" width="500" height="500"
           class="relative inset-0 flex" />
       </div>
     </div>
@@ -124,7 +137,7 @@
         <div
           class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-md">
           <div class="h-96 w-72 relative">
-            <img src="{% static 'assets/card1.webp' %}" alt="card1" width="1324" height="1061"
+            <img src="{% static 'assets/c1.webp' %}" alt="card1" width="1324" height="1061"
               class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125 brightness-100" />
             <div
               class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
@@ -132,10 +145,10 @@
           </div>
           <div
             class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-            <h1 class="font-dmserif text-3xl text-white">Eficiencia Operativa</h1>
+            <h1 class="font-dmserif text-3xl text-white">Mayor productividad</h1>
             <p class="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              Automatización de tareas repetitivas para mejorar la eficiencia y
-              liberar tiempo para tareas estratégicas.
+              Optimice y automatice sus procesos de negocio centrales para ayudar a 
+              todas las personas de su organización a hacer más con menos recursos.
             </p>
           </div>
         </div>
@@ -152,11 +165,11 @@
           <div
             class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
             <h1 class="font-dmserif text-3xl text-white">
-              Aumento de la Productividad
+              Información estratégica más profunda
             </h1>
             <p class="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              Operación 24/7 y realización de tareas durante todo el día para
-              mejorar la productividad organizacional.
+              Elimine los silos de información, obtenga una única fuente de verdad, 
+              y obtenga respuestas rápidas a preguntas de negocio críticas.
             </p>
           </div>
         </div>
@@ -164,7 +177,7 @@
         <div
           class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-md">
           <div class="h-96 w-72 relative">
-            <img src="{% static 'assets/card3.webp' %}" alt="card3" width="1324" height="1061"
+            <img src="{% static 'assets/card5.webp' %}" alt="card3" width="1324" height="1061"
               class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125 brightness-100" />
             <div
               class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
@@ -172,10 +185,10 @@
           </div>
           <div
             class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-            <h1 class="font-dmserif text-3xl text-white">Reducción de Errores</h1>
+            <h1 class="font-dmserif text-3xl text-white">Informes acelerados</h1>
             <p class="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              Realización de tareas con alta precisión y consistencia para reducir
-              errores humanos asociados con tareas manuales.
+              Agilice los informes financieros y de negocios y comparta los resultados fácilmente. 
+              Actúe en base a información estratégica y mejore el rendimiento en tiempo real.
             </p>
           </div>
         </div>
@@ -192,12 +205,11 @@
           <div
             class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
             <h1 class="font-dmserif text-3xl text-white">
-              Rápida Implementación
+              Reduzca el riesgo
             </h1>
             <p class="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              Implementación sin cambios significativos en la infraestructura
-              existente, con robots que interactúan a través de interfaces de
-              usuario.
+              Maximice la visibilidad y el control del negocio, garantice el compliance de los
+               requisitos regulatorios, y proyecte y prevenga riesgos.
             </p>
           </div>
         </div>
@@ -205,7 +217,7 @@
         <div
           class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 rounded-md">
           <div class="h-96 w-72 relative">
-            <img src="{% static 'assets/card5.webp' %}" alt="card5" width="1324" height="1061"
+            <img src="{% static 'assets/c2.webp' %}" alt="card5" width="1324" height="1061"
               class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125 brightness-100" />
             <div
               class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
@@ -214,11 +226,10 @@
           <div
             class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
             <h1 class="font-dmserif text-3xl text-white">
-              Flexibilidad y Escalabilidad
+              IT más simple
             </h1>
             <p class="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              Adaptabilidad rápida a cambios en los procesos o sistemas y
-              escalabilidad mediante la adición de más bots según sea necesario.
+              Usando aplicaciones de ERP integradas que comparten una base de datos, usted puede simplificar la TI y ofrecerles a todos una manera más fácil de trabajar.
             </p>
           </div>
         </div>
@@ -235,11 +246,11 @@
           <div
             class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
             <h1 class="font-dmserif text-3xl text-white">
-              Mejora en la Experiencia del Cliente
+              Agilidad mejorada
             </h1>
             <p class="mb-3 text-lg text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              Respuestas rápidas a consultas de clientes y mejora general en la
-              experiencia del cliente mediante la automatización de procesos.
+              Con operaciones eficientes y rápido acceso a datos en tiempo real,
+               puede identificar rápidamente nuevas oportunidades y reaccionar a ellas.
             </p>
           </div>
         </div>
@@ -354,7 +365,7 @@
     <div class="flex items-center justify-center">
       <a href="/proyectos"
         class="bg-blue-600 text-white p-2.5 rounded-lg text-sm lg:text-lg font-semibold hover:bg-blue-500 border-2 border-solid text-center border-transparent hover:border-black w-auto px-4">
-        RPA - CENABAST
+        ERP - CENABAST
       </a>
     </div>
 
@@ -368,24 +379,7 @@
     <div id="Conocenos">
       <section class="text-neutral-700 dark:text-neutral-300 my-24">
         <h1 class="text-3xl font-bold mb-12 text-center text-black">Nuestro Equipo</h1>
-        <div class="grid text-center md:grid-cols-3 gap-8 m-8">
-          <div class="hidden md:block"></div>
-          <div>
-            <div class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
-              <div class="h-28 overflow-hidden rounded-t-lg bg-blue-300"></div>
-              <div
-                class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
-                <img src="{% static 'assets/Diego.webp' %}" alt="Diego" />
-              </div>
-              <div class="p-6">
-                <h4 class="mb-4 text-2xl font-semibold">Diego Martinez</h4>
-                <hr />
-                <p class="mt-4">Jefe Departamento Tecnologías de Información.</p>
-              </div>
-            </div>
-          </div>
-          <div class="hidden md:block"></div>
-        </div>
+        
       </section>
       <section class="text-neutral-700 dark:text-neutral-300 my-24">
         <div class="grid text-center md:grid-cols-3 gap-8 m-8">
@@ -394,14 +388,13 @@
               <div class="h-28 overflow-hidden rounded-t-lg bg-blue-300"></div>
               <div
                 class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
-                <img src="{% static 'assets/Jorge.webp' %}" alt="Jorge" />
+                <img src="{% static 'assets/Patricia.webp' %}" alt="Patricia" />
               </div>
               <div class="p-6">
-                <h4 class="mb-4 text-2xl font-semibold">Jorge Torres</h4>
+                <h4 class="mb-4 text-2xl font-semibold">Patricia Montino</h4>
                 <hr />
-                <p class="mt-4">
-                  Ingeniero de Procesos Automatizados.
-                </p>
+                <p class="mt-4">Ingeniera ERP.</p>
+                <p class="mt-4">pmontinoz@cenabast.cl</p>
               </div>
             </div>
           </div>
@@ -411,32 +404,29 @@
               <div class="h-28 overflow-hidden rounded-t-lg bg-red-300"></div>
               <div
                 class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
-                <img src="{% static 'assets/Natalia.webp' %}" alt="Natalia" />
+                <img src="{% static 'assets/Daniella.webp' %}" alt="Daniella" />
               </div>
               <div class="p-6">
-                <h4 class="mb-4 text-2xl font-semibold">Natalia Martínez</h4>
+                <h4 class="mb-4 text-2xl font-semibold">Daniella Gonzalez</h4>
                 <hr />
-                <p class="mt-4">
-                  Jefa Sección Transformación Digital.
-                </p>
+                <p class="mt-4"> Encargada Sección Administración ERP.</p>
+                <p class="mt-4">dgonzalez@cenabast.cl</p>
               </div>
             </div>
           </div>
-
+        
           <div>
             <div class="block rounded-lg bg-white shadow-lg dark:bg-neutral-700 dark:shadow-black/30">
               <div class="h-28 overflow-hidden rounded-t-lg bg-purple-400"></div>
               <div
                 class="mx-auto -mt-12 w-24 overflow-hidden rounded-full border-2 border-white bg-white dark:border-neutral-800 dark:bg-neutral-800">
-                <img src="{% static 'assets/Nicolas.webp' %}" alt="Nicolas" />
+                <img src="{% static 'assets/Vania.webp' %}" alt="Vania" />
               </div>
               <div class="p-6">
-                <h4 class="mb-4 text-2xl font-semibold">Nicolás Baquedano</h4>
+                <h4 class="mb-4 text-2xl font-semibold">Vania Gallardo</h4>
                 <hr />
-                <p class="mt-4">
-                  </svg>
-                  Analista de Procesos Digitales.
-                </p>
+                <p class="mt-4"></svg> Analista ERP. </p>
+                <p class="mt-4">vgallardo@cenabast.cl</p>
               </div>
             </div>
           </div>
