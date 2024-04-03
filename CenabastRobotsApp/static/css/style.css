@@ -40,6 +40,25 @@ html {
     height: 120px !important;
   }
 
-
-
+  .menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    padding: 4px 0;
+  }
   
+  #menu-toggle:checked + .menu {
+    display: block;
+  }
+  
+  .menu-item {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .menu-item:hover {
+    text-decoration: underline;
+  }
